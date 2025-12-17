@@ -30,6 +30,20 @@ if not os.path.exists(DATA_CSV):
 
 df = pd.read_csv(DATA_CSV)
 
+# Filter the dataset to keep only rows within specified ranges
+initial_count = len(df)
+df = df[
+    (df['Pregnancies'] >= 0) & (df['Pregnancies'] <= 20) &
+    (df['Glucose'] >= 40) & (df['Glucose'] <= 400) &
+    (df['BloodPressure'] >= 40) & (df['BloodPressure'] <= 140) &
+    (df['SkinThickness'] >= 5) & (df['SkinThickness'] <= 100) &
+    (df['Insulin'] >= 15) & (df['Insulin'] <= 800) &
+    (df['BMI'] >= 15) & (df['BMI'] <= 70) &
+    (df['Age'] >= 21) & (df['Age'] <= 100)
+]
+filtered_count = len(df)
+print(f"Dataset filtered: {initial_count} -> {filtered_count} rows (removed {initial_count - filtered_count} outliers)")
+
 
 
 df.head()
