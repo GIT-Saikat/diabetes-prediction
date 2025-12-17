@@ -91,7 +91,7 @@ export function DiabetesPredictionForm({
     const riskFactors: string[] = [];
     const feedback: string[] = [];
 
-    // Glucose scoring (most important factor)
+    // Glucose scoring
     if (data.glucose >= 140) {
       score += 35;
       riskFactors.push("High glucose levels");

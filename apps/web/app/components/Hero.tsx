@@ -60,7 +60,7 @@ const Hero = ({ onCreateAccount, onSignIn }: HeroProps) => {
         <div className="space-y-6">
           <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow">
             <div className="flex items-start gap-4">
-              <div className="bg-blue-100 p-3 rounded-lg flex-shrink-0">
+              <div className="bg-blue-100 p-3 rounded-lg shrink-0">
                 <Heart className="w-6 h-6 text-blue-600" />
               </div>
               <div>
@@ -76,7 +76,7 @@ const Hero = ({ onCreateAccount, onSignIn }: HeroProps) => {
 
           <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow">
             <div className="flex items-start gap-4">
-              <div className="bg-green-100 p-3 rounded-lg flex-shrink-0">
+              <div className="bg-green-100 p-3 rounded-lg shrink-0">
                 <TrendingUp className="w-6 h-6 text-green-600" />
               </div>
               <div>
@@ -91,7 +91,7 @@ const Hero = ({ onCreateAccount, onSignIn }: HeroProps) => {
 
           <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow">
             <div className="flex items-start gap-4">
-              <div className="bg-purple-100 p-3 rounded-lg flex-shrink-0">
+              <div className="bg-purple-100 p-3 rounded-lg shrink-0">
                 <Activity className="w-6 h-6 text-purple-600" />
               </div>
               <div>
