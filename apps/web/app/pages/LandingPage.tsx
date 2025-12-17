@@ -11,10 +11,10 @@ interface LandingPageProps {
 
 const LandingPage = ({ onCreateAccount, onSignIn }: LandingPageProps) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+    <div className="min-h-screen bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50">
       <Container>
         <NavBar />
-        <Hero></Hero>
+        <Hero onCreateAccount={onCreateAccount} onSignIn={onSignIn}></Hero>
         <Footer></Footer>
       </Container>
     </div>
